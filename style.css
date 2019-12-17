@@ -1,0 +1,19 @@
+#movie-list-with-genres-container {
+  width: 100vw;
+  display: flex;
+}
+
+#genres-container {
+  width: 15%;
+}
+
+#movie-list-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 23%;
+  margin: 0 1%;
+}
