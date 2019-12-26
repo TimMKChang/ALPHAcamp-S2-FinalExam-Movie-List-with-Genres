@@ -17,3 +17,17 @@
   width: 23%;
   margin: 0 1%;
 }
+
+.pseudo-card {
+  min-height: 50vh;
+  border: none;
+}
+
+.card-img-top {
+  height: 50vh;
+  object-fit: contain;
+}
+
+.card-title {
+  height: 10vh;
+}

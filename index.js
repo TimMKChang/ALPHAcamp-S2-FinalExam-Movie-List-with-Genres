@@ -73,10 +73,19 @@ function displayMoiveListByGenres(genresNumber) {
       htmlContent += `<span class="badge badge-info font-weight-normal mx-1">${movieGenres[genresNumber]}</span>`;
     });
     htmlContent += `
-        </div >
-      </div >
+        </div>
+      </div>
     `;
   });
+
+  if (data.length === 0) {
+    htmlContent += `<h3 class="card-title">No results found</h3>`;
+  } else if (data.length <= 4) {
+    for (let i = 0; i < 4; i++) {
+      htmlContent += `<div class="card mb-3 pseudo-card"></div>`;
+    }
+  }
+
   movieListContainer.innerHTML = htmlContent;
 }
 
